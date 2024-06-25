@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="v1.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">My Portfolio</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="grid-container">
+
+            <!-- For each of the artworks -->
+            
+            <div class="grid-item"><img src="/Users/macbook/Desktop/Html files/large.jpg" alt="Image 1">
+            <p>Ethereal Dreams</p></div>
+            <div class="grid-item"><img src="/Users/macbook/Desktop/Html files/download (2).jpeg" alt="Image 2">
+            <p>Cosmic Harmony</p></div>
+            <div class="grid-item"><img src="/Users/macbook/Desktop/Html files/download (2).jpeg" alt="Image 3">
+            <p>Mystic Echoes</p></div>
+            <div class="grid-item"><img src="/Users/macbook/Desktop/Html files/download (2).jpeg" alt="Image 4">
+            <p>Celestial Whisperss</p></div>
+            <div class="grid-item"><img src="/Users/macbook/Desktop/Html files/download (2).jpeg" alt="Image 5">
+            <p>44</p></div>
+            <div class="grid-item"><img src="/Users/macbook/Desktop/Html files/download (2).jpeg" alt="Image 6">
+            <p>Infinite Reflections</p></div>
+            <div class="grid-item"><img src="/Users/macbook/Desktop/Html files/download (2).jpeg" alt="Image 7">
+            <p>SS2</p></div>
+            <div class="grid-item"><img src="/Users/macbook/Desktop/Html files/download (2).jpeg" alt="Image 8">
+            <p>Chasm</p></div>
+            <div class="grid-item"><img src="/Users/macbook/Desktop/Html files/download (2).jpeg" alt="Image 9">
+            <p>Dreamscape</p></div>
+            <div class="grid-item"><img src="/Users/macbook/Desktop/Html files/download (2).jpeg" alt="Image 10">
+            <p>Paranoia</p></div>
+            <div class="grid-item"><img src="/Users/macbook/Desktop/Html files/download (2).jpeg" alt="Image 11">
+            <p>Headway</p></div>
+            <div class="grid-item" ><img src="/Users/macbook/Desktop/Html files/download (2).jpeg" alt="Image 12">
+            <p>Diletante</p> </div>
+            <div class="grid-item"><img src="/Users/macbook/Desktop/Html files/download (2).jpeg" alt="Image 13">
+            <p>Proper Posture</p></div>
+            <div class="grid-item"><img src="/Users/macbook/Desktop/Html files/download (2).jpeg" alt="Image 14">
+            <p>Animal Instinct</p></div>
+            <div class="grid-item"><img src="/Users/macbook/Desktop/Html files/download (2).jpeg" alt="Image 15">
+            <p>Gateway</p></div>
+            <div class="grid-item"><img src="/Users/macbook/Desktop/Html files/download (2).jpeg" alt="Image 16">
+            <p>Waterfall</p></div>
+        </div>
+    </main>
+
+ <!-- For the text and hover -->
+
+    <div class="myDIV">Hover over me.</div>
+
+    <div class="hide">These artworks are currently not for sale</div>
+
+<!-- For each of the lightbox -->
+
+
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" class="lightbox-content" src="" alt="">
+        <div id="caption" class="caption"></div>
+    </div>
+
+    <script>
+        function openLightbox(imageSrc, captionText) {
+            var lightbox = document.getElementById('lightbox');
+            var lightboxImg = document.getElementById('lightbox-img');
+            var caption = document.getElementById('caption');
+
+            lightbox.style.display = 'block';
+            lightboxImg.src = imageSrc;
+            caption.innerHTML = captionText;
+        }
+
+        function closeLightbox() {
+            var lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+
+<!-- Not enough time, but thank you for your classes sir! God bless you, and may we meet again-->
